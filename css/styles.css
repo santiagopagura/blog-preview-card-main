@@ -72,7 +72,7 @@ main {
   text-decoration: none;
   color: inherit;
 }
-.prologue a:active {
+.prologue a:hover {
   color: hsl(47, 88%, 63%);
 }
 
