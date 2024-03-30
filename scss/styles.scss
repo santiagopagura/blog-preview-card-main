@@ -13,7 +13,6 @@ $Black: hsl(0, 0%, 7%);
   src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
 }
 
-// - Font size (paragraph): 16px
 
 body{
   font-family: "figtree";
@@ -24,18 +23,20 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
-
+img {
+  vertical-align: top;
+}
 main {
   background-color: $White;
   border-radius: 16px;
   box-shadow: 9px 12px $Black;
-  border: 1px solid $Black;
+  border: 2px solid $Black;
   padding: 24px;
-  max-width: 375px;
-  
+  max-width: 336px;
+  margin: 24px;
 }
+
 .cover {
   border-radius: 8px;
   height: 200px;
@@ -47,10 +48,10 @@ main {
   display: flex;
   flex-direction: column;
   p {
-    font-weight: 500;
+    font-size: 12px;
   }
-
 }
+
 .learning {
   background-color: $yellow;
   border-radius: 4px;
@@ -60,13 +61,25 @@ main {
   margin-bottom: 16px;
   margin-right: auto;
 }
+
 .prologue {
   h1 {
     font-weight: 800;
     margin: 24px 0;
+    font-size: 21px;
    }
   p {
     margin: 24px 0;
+    font-weight: 500;
+    color: $Grey;
+    font-size: 14px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:active{
+      color: $yellow;
+    }
   }
 }
 
@@ -81,7 +94,6 @@ main {
     font-weight: bold;
   }
 }
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

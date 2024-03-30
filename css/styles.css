@@ -18,13 +18,18 @@ body {
   height: 100vh;
 }
 
+img {
+  vertical-align: top;
+}
+
 main {
   background-color: hsl(0, 0%, 100%);
   border-radius: 16px;
   box-shadow: 9px 12px hsl(0, 0%, 7%);
-  border: 1px solid hsl(0, 0%, 7%);
+  border: 2px solid hsl(0, 0%, 7%);
   padding: 24px;
-  max-width: 375px;
+  max-width: 336px;
+  margin: 24px;
 }
 
 .cover {
@@ -39,7 +44,7 @@ main {
   flex-direction: column;
 }
 .lala p {
-  font-weight: 500;
+  font-size: 12px;
 }
 
 .learning {
@@ -55,9 +60,20 @@ main {
 .prologue h1 {
   font-weight: 800;
   margin: 24px 0;
+  font-size: 21px;
 }
 .prologue p {
   margin: 24px 0;
+  font-weight: 500;
+  color: hsl(0, 0%, 50%);
+  font-size: 14px;
+}
+.prologue a {
+  text-decoration: none;
+  color: inherit;
+}
+.prologue a:active {
+  color: hsl(47, 88%, 63%);
 }
 
 .avatar {
